@@ -1,0 +1,20 @@
+{  "mcpServers": {
+  "matlab": {
+    "command": "C:/Users/sebahattin.babur/.matlab/agentic-toolkits/bin/matlab-mcp-server.exe",
+    "args": [
+      "--matlab-session-mode=existing",
+      "--extension-file=C:/Users/sebahattin.babur/.matlab/agentic-toolkits/simulink/tools/tools.json",
+      "--log-folder=C:/Users/sebahattin.babur/Desktop/Webinar Projesi/.mcp-logs",
+      "--log-level=debug"
+    ],
+    "alwaysLoad": true
+  },
+  "polyspace": {
+    "command": "C:/Users/sebahattin.babur/AppData/Local/polyspace/polyspace-mcp-server.exe",
+    "args": [
+      "--polyspace-root=C:/Program Files/Polyspace/R2026a"
+    ],
+    "alwaysLoad": true
+  }
+}
+}
