@@ -1,0 +1,7 @@
+-I"C:/Users/sebahattin.babur/Desktop/Webinar Projesi/uav-altitude-hold-do178c-agentic-verification/scripts"
+-I"C:/Users/sebahattin.babur/Desktop/Webinar Projesi/uav-altitude-hold-do178c-agentic-verification/scripts/uav_altitude_hold_ert_rtw"
+-I"C:/Program Files/MATLAB/R2026a/extern/include"
+-I"C:/Program Files/MATLAB/R2026a/simulink/include"
+-I"C:/Program Files/MATLAB/R2026a/rtw/c/src"
+-I"C:/Program Files/MATLAB/R2026a/rtw/c/src/ext_mode/common"
+-I"C:/Program Files/MATLAB/R2026a/rtw/c/ert"

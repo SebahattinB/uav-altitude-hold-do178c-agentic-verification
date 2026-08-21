@@ -1,0 +1,62 @@
+SIL numerical-equivalence co-simulation: BLOCKED
+==================================================
+
+Status
+------
+- Embedded Coder code generation (GenCodeOnly='on'): succeeds (see
+  scripts/uav_altitude_hold_ert_rtw/).
+- Full object-code build (GenCodeOnly='off', plain rtwbuild — compiling
+  and linking the generated code with MinGW64/gmake, no SIL harness):
+  FAILS at the link step with
+      'uav_altitude_hold.bat' is not recognized as an internal or
+      external command, operable program or batch file.
+  reproducibly, on a clean rebuild, independent of the SIL path below.
+- SIL object-code build (set_param('uav_altitude_hold','SimulationMode',
+  'software-in-the-loop'); sim(...)): FAILS during the build step with a
+  different, unrelated error (see below), before a SIL executable is
+  produced.
+
+Error observed
+---------------
+    ### Build procedure for uav_altitude_hold aborted due to an error.
+    STD exception 'struct mwboost::wrapexcept<class mwboost::bad_lexical_cast>':
+    'bad lexical cast: source type value could not be interpreted as target' was caught.
+
+No entry is written to the Simulink Diagnostic Viewer for this failure; it
+surfaces only as an uncaught C++ exception at the MATLAB command line.
+
+Root cause (assessed)
+----------------------
+This machine's OS locale is Turkish (tr-TR / tr_TR.UTF-8), which uses a
+comma as the decimal separator. `bad_lexical_cast` from mwboost is a known
+class of failure where MathWorks-internal native (C++) build tooling
+attempts to parse a numeric string with the wrong decimal separator
+convention for the active locale. Embedded Coder code generation itself
+(TLC-based, GenCodeOnly) does not hit this path and completes cleanly;
+only the SIL build's native toolchain invocation does.
+
+This is an environment/locale issue, not a defect in the model, the
+generated code, or the requirements/test artifacts in this repository.
+
+Suggested resolution (not applied here)
+----------------------------------------
+- Re-run the SIL build with the process locale temporarily forced to
+  en-US (e.g. launch MATLAB with `LC_ALL=en_US.UTF-8` / an English
+  Windows regional-format override), or
+- File a Technical Support case with MathWorks referencing the
+  `mwboost::bad_lexical_cast` failure during SIL build under a
+  comma-decimal-separator locale.
+
+Note: the link-step failure (.bat not recognized) was not root-caused in
+depth; a plausible but unconfirmed factor is the space in this repo's
+folder name ("Webinar Projesi"), a known trouble spot for Windows
+make/batch invocation chains. It reproduces on a clean rebuild and is
+independent of the separate SIL/locale failure above. Code generation
+alone (GenCodeOnly='on', the mode used for all evidence in this repo)
+is unaffected by either issue.
+
+Everything upstream of this step (model, requirements traceability,
+MATLAB unit tests, Simulink Test harnesses, Model Advisor, structural
+coverage, Polyspace Bug Finder/Code Prover on the generated code) is
+unaffected and independently verified — see
+docs/verification_evidence_summary.md.

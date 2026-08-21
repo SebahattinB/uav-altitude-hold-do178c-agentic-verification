@@ -1,0 +1,41 @@
+| Running tests   |            |                      | 2026-08-21 13:33:39
+|-----------------|------------|
+| Running         | suite      | uav_altitude_hold_suite | | tests/c/test_uav_altitude_hold.c
+|-----------------|------------|
+| Running         | test       | uav_altitude_hold_suite/nominal_positive_error
+|            PASS | test       | uav_altitude_hold_suite/nominal_positive_error | time: 
+| Running         | test       | uav_altitude_hold_suite/nominal_negative_error
+|            PASS | test       | uav_altitude_hold_suite/nominal_negative_error | time: 
+| Running         | test       | uav_altitude_hold_suite/zero_error_holds_trim
+|            PASS | test       | uav_altitude_hold_suite/zero_error_holds_trim | time: 
+| Running         | test       | uav_altitude_hold_suite/rate_damping
+|            PASS | test       | uav_altitude_hold_suite/rate_damping | time: 
+| Running         | test       | uav_altitude_hold_suite/output_saturates_high
+|            PASS | test       | uav_altitude_hold_suite/output_saturates_high | time: 
+| Running         | test       | uav_altitude_hold_suite/output_saturates_low
+|            PASS | test       | uav_altitude_hold_suite/output_saturates_low | time: 
+| Running         | test       | uav_altitude_hold_suite/fallback_sensor_invalid
+|            PASS | test       | uav_altitude_hold_suite/fallback_sensor_invalid | time: 
+| Running         | test       | uav_altitude_hold_suite/fallback_alt_cmd_below_range
+|            PASS | test       | uav_altitude_hold_suite/fallback_alt_cmd_below_range | time: 
+| Running         | test       | uav_altitude_hold_suite/fallback_alt_cmd_above_range
+|            PASS | test       | uav_altitude_hold_suite/fallback_alt_cmd_above_range | time: 
+| Running         | test       | uav_altitude_hold_suite/fallback_alt_meas_below_range
+|            PASS | test       | uav_altitude_hold_suite/fallback_alt_meas_below_range | time: 
+| Running         | test       | uav_altitude_hold_suite/fallback_alt_meas_above_range
+|            PASS | test       | uav_altitude_hold_suite/fallback_alt_meas_above_range | time: 
+| Running         | test       | uav_altitude_hold_suite/fallback_vz_below_range
+|            PASS | test       | uav_altitude_hold_suite/fallback_vz_below_range | time: 
+| Running         | test       | uav_altitude_hold_suite/fallback_vz_above_range
+|            PASS | test       | uav_altitude_hold_suite/fallback_vz_above_range | time: 
+| Running         | test       | uav_altitude_hold_suite/fallback_non_finite_input
+|            PASS | test       | uav_altitude_hold_suite/fallback_non_finite_input | time: 
+|-----------------|------------|
+|            PASS | suite      | uav_altitude_hold_suite | time: 
+|-----------------|------------|
+|            DONE |            |                      | time: 
+
+|        |  Total | Passed | Failed | Incomplete
+|--------|--------|--------|--------|------------
+| Suites |      1 |      1 |      0 |          0
+|  Tests |     14 |     14 |      0 |          0

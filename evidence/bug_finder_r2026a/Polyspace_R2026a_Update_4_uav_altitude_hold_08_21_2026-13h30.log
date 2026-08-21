@@ -1,0 +1,319 @@
+<polyspace-bug-finder R2026a Update 4 PID5568 PGID5568>
+
+Polyspace verification of uav_altitude_hold project.
+Starting at 08/21/2026, 13h30.
+
+
+Remark: By default, some results are not generated for headers.
+|       Search for '-generate-results-for' in user documentation to generate results for these headers.
+
+Verifying sources compliance ...
+
+Options used with Verifier:
+-prog=uav_altitude_hold
+-lang=C
+-target=i386
+-compiler=generic
+-polyspace-version=26.1 (R2026a Update 4)
+-author=sebahattin.babur
+-verif-version=1.0
+-results-dir=C:\Users\sebahattin.babur\Desktop\Webinar Projesi\uav-altitude-hold-do178c-agentic-verification\evidence\bug_finder_r2026a
+-date=21/08/2026
+
+User:
+-cwe=all
+-misra-c-2023=all
+-I1=C:\Users\sebahattin.babur\Desktop\Webinar Projesi\uav-altitude-hold-do178c-agentic-verification\scripts\uav_altitude_hold_ert_rtw
+
+
+Checkers requested:
+    Bug Finder Findings 95/367
+    CWE 226/226
+    MISRA C:2023 219/219
+
+Checkers enabled:
+    Bug Finder Findings 95/367
+    CWE 215/226
+    MISRA C:2023 219/219
+
+Verifying host configuration:
+Number of physical cores:                14
+Number of logical cores:                 20
+Processor type:                          amd64
+Processor model:                12th Gen Intel(R) Core(TM) i7-12700H
+Processor frequency:            2.688 GHz
+Memory > 4 GB:                                                      31.69 GB
+Tmp space available in C:\Users\SEBAHA~1.BAB\AppData\Local\Temp:    159.31 GB
+
+Remark: 14 physical core(s) detected. The verification creates 14 process(es).
+*** Configuration of the host :	OK
+
+Type C:\Users\sebahattin.babur\Desktop\Webinar Projesi\uav-altitude-hold-do178c-agentic-verification\evidence\bug_finder_r2026a\kill-rte-kernel.bat on host FGS34ENG05 to halt Verifier process
+
+Checking license ...
+License is OK
+
+
+Polyspace C analysis
+Copyright 1999-2025 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: 2026-08-21 13:30:03
+Host: MINGW64_NTx_64-10.0 FGS34ENG05 0 amd64
+User: sebahattin.babur
+**********************************************************
+***
+*** Verifying C sources
+***
+**********************************************************
+
+Verifying sources ...
+Verifying uav_altitude_hold.c (1/1)
+
+User time for compilation.unit: 00:00:04.24 (4.24real, 4.24u + 0s)
+Global compilation phase...
+
+Number of files                  : 1
+Number of lines                  : 138
+Number of lines without comments : 41
+
+These metrics include header file content in addition to source files and reflect the true complexity of code and analysis.
+Number of source files    : 1
+Number of C lines of code : 729 (excludes commented (722) and empty lines (285))
+Number of headers         : 4 (directly included in sources 1, Maximum depth of inclusion 2)
+
+Verifying cross-files ANSI C compliance
+User time for compilation.link1: 00:00:02.45 (2.46real, 2.46u + 0s)
+
+Stubbing standard library functions ...
+Doing code transformations ...
+Start running PQL program(s). 
+Done running PQL programs. Took 14.23s.
+User time for compilation.PQL: 00:00:14.33 (14.33real)
+Function 'memset' successfully mapped to standard function 'memset'.
+User time for compilation.link2: 00:00:16.76 (16.77real, 16.77u + 0s (0.02gc))
+Remark: The generated default DRS XML file "drs-template.xml" can be found in <result_dir> folder.
+
+**********************************************************
+MISRA C:2023 Rule checker results
+ Use the Report Generator in order to get the complete report.
+**********************************************************
+Summary per file:
+  File C:\Users\sebahattin.babur\Desktop\Webinar Projesi\uav-altitude-hold-do178c-agentic-verification\scripts\uav_altitude_hold_ert_rtw\rtwtypes.h: 
+    40 rules violated
+  File C:\Users\sebahattin.babur\Desktop\Webinar Projesi\uav-altitude-hold-do178c-agentic-verification\scripts\uav_altitude_hold_ert_rtw\uav_altitude_hold.c: 
+    6 rules violated
+**********************************************************
+Summary per rule:
+  rule 2.3 violated 16 times
+  rule 2.5 violated 16 times
+  rule D4.6 violated 6 times
+  rule 8.7 violated 3 times
+  rule 15.7 violated 2 times
+  rule 21.1 violated 2 times
+  rule 10.1 violated 1 time
+
+
+
+
+Packing compilation data
+
+Defects statistics:
+  - Total number of defects: 0
+done.
+
+**********************************************************
+***
+*** C sources verification done
+***
+**********************************************************
+Ending at: 2026-08-21 13:30:32
+User time for compilation: 00:00:28.82 (28.82real, 28.82u + 0s (0.03gc))
+
+Polyspace C analysis
+Copyright 1999-2025 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: 2026-08-21 13:30:32
+Host: MINGW64_NTx_64-10.0 FGS34ENG05 0 amd64
+User: sebahattin.babur
+**********************************************************
+***
+*** Beginning Bug-finder - Pre-analysis
+***
+**********************************************************
+**** Bug-finder - Pre-analysis - 1 (P_AL)
+**** Bug-finder - Pre-analysis - 1 (P_AL) took 0.02real, 0.02u + 0s
+**** Bug-finder - Pre-analysis - 2 (P_ACP)
+* n-acp-t = 0 n-epp' = 0 n-acp-l = 0
+**** Bug-finder - Pre-analysis - 2 (P_ACP) took 0real, 0u + 0s
+Total complexity = 1276
+**** Bug-finder - Pre-analysis - 3 (P_O)
+**** Bug-finder - Pre-analysis - 3 (P_O) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 4 (P_MA)
+**** Bug-finder - Pre-analysis - 4 (P_MA) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 5 (P_G)
+**** Bug-finder - Pre-analysis - 5 (P_G) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 6 (P_DLC)
+**** Bug-finder - Pre-analysis - 6 (P_DLC) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 7 (P_DRC)
+**** Bug-finder - Pre-analysis - 7 (P_DRC) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 8 (P_TT)
+**** Bug-finder - Pre-analysis - 8 (P_TT) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 9 (P_FI)
+**** Bug-finder - Pre-analysis - 9 (P_FI) took 0.06real, 0.06u + 0s
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 0
+
+GUI files generation completed in 0.51real
+
+**********************************************************
+***
+*** Bug-finder - Pre-analysis done
+***
+**********************************************************
+Ending at: 2026-08-21 13:30:35
+User time for pre-analysis: 00:00:02.65 (2.65real, 2.65u + 0s (0.06gc))
+
+Polyspace C analysis
+Copyright 1999-2025 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: 2026-08-21 13:30:35
+Host: MINGW64_NTx_64-10.0 FGS34ENG05 0 amd64
+User: sebahattin.babur
+**********************************************************
+***
+*** Beginning Bug-finder - Function Analysis
+***
+**********************************************************
+**** Bug-finder - Function Analysis - (Verifying function #1 / 2: uav_altitude_hold_step)
+**** Bug-finder - Function Analysis - (Verifying function #2 / 2: uav_altitude_hold_initialize)
+**** Bug-finder - Function Analysis - (Verifying function #2 / 2: uav_altitude_hold_initialize) took 0.64real
+**** Bug-finder - Function Analysis - (Verifying function #1 / 2: uav_altitude_hold_step) took 0.65real
+Maximum Memory Usage: 1146 MB
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 0
+
+GUI files generation completed in 0.57real
+
+* Total IL complexity: 200
+
+**********************************************************
+***
+*** Bug-finder - Function Analysis done
+***
+**********************************************************
+Ending at: 2026-08-21 13:30:38
+User time for function: 00:00:02.96 (2.96real, 2.96u + 0s (0.02gc))
+
+Polyspace C analysis
+Copyright 1999-2025 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: 2026-08-21 13:30:38
+Host: MINGW64_NTx_64-10.0 FGS34ENG05 0 amd64
+User: sebahattin.babur
+**********************************************************
+***
+*** Beginning Bug-finder - Module Analysis
+***
+**********************************************************
+**** Bug-finder - Module Analysis - 1 (Computing modules)
+**** Bug-finder - Module Analysis - 1 (Computing modules) took 0.01real, 0.01u + 0s
+* Created no module as there are no available user functions, or all functions are independent
+Maximum Memory Usage: 0 MB
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 0
+
+GUI files generation completed in 0.53real
+
+**********************************************************
+***
+*** Bug-finder - Module Analysis done
+***
+**********************************************************
+Ending at: 2026-08-21 13:30:38
+User time for module: 00:00:00.59 (0.6real, 0.6u + 0s (0.02gc))
+
+Polyspace C analysis
+Copyright 1999-2025 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: 2026-08-21 13:30:38
+Host: MINGW64_NTx_64-10.0 FGS34ENG05 0 amd64
+User: sebahattin.babur
+**********************************************************
+***
+*** Beginning Bug-finder - Global analysis
+***
+**********************************************************
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 0
+
+GUI files generation completed in 0.55real
+
+
+**********************************************************
+MISRA C:2023 Rule checker results
+ Use the Report Generator in order to get the complete report.
+**********************************************************
+Summary per file:
+  File C:\Users\sebahattin.babur\Desktop\Webinar Projesi\uav-altitude-hold-do178c-agentic-verification\scripts\uav_altitude_hold_ert_rtw\rtwtypes.h: 
+    40 rules violated
+  File C:\Users\sebahattin.babur\Desktop\Webinar Projesi\uav-altitude-hold-do178c-agentic-verification\scripts\uav_altitude_hold_ert_rtw\uav_altitude_hold.c: 
+    6 rules violated
+**********************************************************
+Summary per rule:
+  rule 2.3 violated 16 times
+  rule 2.5 violated 16 times
+  rule D4.6 violated 6 times
+  rule 8.7 violated 3 times
+  rule 15.7 violated 2 times
+  rule 21.1 violated 2 times
+  rule 10.1 violated 1 time
+
+**********************************************************
+***
+*** Bug-finder - Global analysis done
+***
+**********************************************************
+Ending at: 2026-08-21 13:30:40
+User time for global: 00:00:01.23 (1.23real, 1.23u + 0s (0.03gc))
+
+Polyspace C analysis
+Copyright 1999-2025 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: 2026-08-21 13:30:40
+Host: MINGW64_NTx_64-10.0 FGS34ENG05 0 amd64
+User: sebahattin.babur
+**********************************************************
+***
+*** Beginning Bug-finder - End Position Update
+***
+**********************************************************
+**********************************************************
+***
+*** Bug-finder - End Position Update done
+***
+**********************************************************
+Ending at: 2026-08-21 13:30:40
+User time for end_position_update: 00:00:00.68 (0.68real, 0.68u + 0s)
+User time for polyspace-bug-finder: 00:00:40.86 (40.87real, 40.87u + 0s (0.16gc))
+
+***
+*** End of Polyspace analysis
+***

@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__matlab__model_read_diagnostics",
+      "mcp__matlab__run_matlab_file",
+      "mcp__matlab__run_matlab_test_file",
+      "mcp__matlab__model_query_params",
+      "mcp__polyspace__configure_checkers_for_polyspace",
+      "Read(//c/Program Files/Polyspace/R2026a/polyspace/bin/**)",
+      "Read(//c/Program Files/Polyspace//**)",
+      "Read(//c/Program Files/Polyspace/R2026a/**)",
+      "Bash(\"/c/Program Files/Polyspace/R2026a/polyspace/bin/polyspace-bug-finder-nodesktop.exe\" -help)",
+      "Bash(mkdir -p evidence/bug_finder_r2026a)",
+      "Bash('/c/Program Files/Polyspace/R2026a/polyspace/bin/polyspace-bug-finder-nodesktop.exe' -sources scripts/uav_altitude_hold_ert_rtw/uav_altitude_hold.c -I scripts/uav_altitude_hold_ert_rtw -misra-c-2023 all -cwe all -results-dir evidence/bug_finder_r2026a -prog uav_altitude_hold)",
+      "Bash(\"/c/Program Files/Polyspace/R2026a/polyspace/bin/polyspace-results-export.exe\" -help)",
+      "Bash(\"/c/Program Files/Polyspace/R2026a/polyspace/bin/polyspace-results-export.exe\" -format csv -results-dir \"evidence/bug_finder_r2026a\" -output-name \"evidence/bug_finder_r2026a/findings.csv\" -set-language-english)",
+      "Bash(echo \"exit: $?\")",
+      "WebFetch(domain:www.mathworks.com)"
+    ]
+  }
+}

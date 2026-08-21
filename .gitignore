@@ -1,0 +1,17 @@
+# Simulink/MATLAB build and simulation caches
+slprj/
+*.slxc
+slcov_output/
+codegen/
+
+# Requirements Toolbox lock/cache
+*~slreqx.slmx
+
+# Polyspace working files
+*.stats.zip
+*.psbf
+ps_comments.db
+ps_sources.db
+
+# Local build outputs (rebuild via scripts/, tests/c/build_and_run.sh)
+tests/c/build/
