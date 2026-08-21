@@ -2,18 +2,18 @@
 <HarnessInformation>
   <Harness>
     <P Name="Name">uav_altitude_hold_Harness1</P>
-    <P Name="Description">Nominal closed-loop tracking: hover, climb command, descend command.</P>
+    <P Name="Description">test</P>
     <P Name="CreatedBy">sebahattin.babur</P>
-    <P Name="CreatedOn">Fri Aug 21 14:28:58 2026</P>
+    <P Name="CreatedOn">Fri Aug 21 14:46:30 2026</P>
     <P Name="ModifiedBy">sebahattin.babur</P>
-    <P Name="LastSaved">Fri Aug 21 14:29:06 2026</P>
+    <P Name="LastSaved">Fri Aug 21 14:47:23 2026</P>
     <P Name="Owner">bd</P>
     <P Name="OwnerType">BD_HARNESS</P>
     <P Name="OwnerPath">.</P>
     <P Name="Directory"/>
     <P Name="FileName">uav_altitude_hold_Harness1.slx</P>
     <P Name="SavedVersion">26.1</P>
-    <P Name="HarnessUUID">f1283f18-8f1d-4bb8-ac02-29eec702445d</P>
+    <P Name="HarnessUUID">641c74c1-17c6-4297-90a3-bc6e5adcdd92</P>
     <P Name="HarnessConnectionsMap">0,1,2,3|0|0,0,0,0||</P>
     <P Name="VerificationMode">0</P>
     <P Name="HarnessOwnerCheckSum">0,0,0,0</P>
@@ -34,7 +34,7 @@
     <P Name="CustomSourcePath"/>
     <P Name="CustomSinkPath"/>
     <P Name="BlockSIDs">2|22|0|0|0|0|0</P>
-    <P Name="OpenGraphs">||uav_altitude_hold_Harness1</P>
+    <P Name="OpenGraphs"/>
     <P Name="ExistingBuildFolder"/>
     <P Name="FunctionInterfaceName"/>
     <P Name="SysArchSUTModel"/>
@@ -43,16 +43,16 @@
     <P Name="Name">uav_altitude_hold_Harness2</P>
     <P Name="Description">Input-validity gating and hover-fallback edge cases.</P>
     <P Name="CreatedBy">sebahattin.babur</P>
-    <P Name="CreatedOn">Fri Aug 21 14:29:07 2026</P>
+    <P Name="CreatedOn">Fri Aug 21 15:46:58 2026</P>
     <P Name="ModifiedBy">sebahattin.babur</P>
-    <P Name="LastSaved">Fri Aug 21 14:29:14 2026</P>
+    <P Name="LastSaved">Fri Aug 21 15:47:20 2026</P>
     <P Name="Owner">bd</P>
     <P Name="OwnerType">BD_HARNESS</P>
     <P Name="OwnerPath">.</P>
     <P Name="Directory"/>
     <P Name="FileName">uav_altitude_hold_Harness2.slx</P>
     <P Name="SavedVersion">26.1</P>
-    <P Name="HarnessUUID">ea9a3224-e8ac-4471-b6f4-95825a038163</P>
+    <P Name="HarnessUUID">d9ec2aa7-3b32-48e1-bf9d-88e1da93b713</P>
     <P Name="HarnessConnectionsMap">0,1,2,3|0|0,0,0,0||</P>
     <P Name="VerificationMode">0</P>
     <P Name="HarnessOwnerCheckSum">0,0,0,0</P>
